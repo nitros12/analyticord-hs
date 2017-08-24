@@ -1,8 +1,8 @@
-name:                analyiticord-hs
+name:                analyticord-hs
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/nitros12/analyiticord-hs#readme
+homepage:            https://github.com/nitros12/analyticord-hs#readme
 license:             BSD3
 license-file:        LICENSE
 author:              ben simms
@@ -30,4 +30,4 @@ library
 
 source-repository head
   type:     git
-  location: https://github.com/nitros12/analyiticord-hs
+  location: https://github.com/nitros12/analyticord-hs
