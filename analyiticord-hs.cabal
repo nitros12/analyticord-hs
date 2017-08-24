@@ -16,24 +16,16 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
+                     , DataTypes
   build-depends:       base >= 4.7 && < 5
-  default-language:    Haskell2010
-
-executable analyiticord-hs-exe
-  hs-source-dirs:      app
-  main-is:             Main.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
-  build-depends:       base
-                     , analyiticord-hs
-  default-language:    Haskell2010
-
-test-suite analyiticord-hs-test
-  type:                exitcode-stdio-1.0
-  hs-source-dirs:      test
-  main-is:             Spec.hs
-  build-depends:       base
-                     , analyiticord-hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+                     , aeson >= 1.1
+                     , yaml >= 0.8
+                     , bytestring
+                     , containers
+                     , text
+                     , http-client
+                     , http-client-tls
+                     , http-types
   default-language:    Haskell2010
 
 source-repository head
