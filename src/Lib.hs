@@ -47,7 +47,7 @@ makeKey :: ByteString -> Maybe ByteString -> ApiKey
 makeKey bot user = ApiKey (B.append "bot " bot) (B.append "user " <$> user)
 
 -- |Make a request to the API
-makeRequest :: FromJSON a => String -- ^ The url to make the request to, in the format "<request type> <url>"
+makeRequest :: FromJSON a => String -- ^ The url to make the request to, in the format "\<request type\> \<url\>"
             -> [(ByteString, Maybe ByteString)] -- ^ Array of k:v pairs for request parameters
             -> ByteString -- ^ Auth string to use
             -> ApiEffect a -- ^ Returned API response, either an error or your response
